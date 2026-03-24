@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JG Fashion | প্রিমিয়াম আনস্টিচ কটন ও গর্জিয়াস কালেকশন</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="JG Fashion - বাংলাদেশের সেরা আনস্টিচ কটন থ্রি-পিস কালেকশন। প্রিমিয়াম মানের ড্রেস, দ্রুত হোম ডেলিভারি। অর্ডার করুন এখনই।">
+    <meta name="keywords" content="আনস্টিচ থ্রি-পিস, unstitched three piece Bangladesh, JG Fashion, কটন থ্রি-পিস, ঈদ কালেকশন, পার্টি ড্রেস বাংলাদেশ">
+    <meta name="author" content="JG Fashion">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://jg-fashion.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="JG Fashion | প্রিমিয়াম আনস্টিচ কটন থ্রি-পিস">
+    <meta property="og:description" content="বাংলাদেশের সেরা আনস্টিচ কটন থ্রি-পিস কালেকশন। প্রিমিয়াম মানের ড্রেস, দ্রুত হোম ডেলিভারি।">
+    <meta property="og:url" content="https://jg-fashion.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="JG Fashion">
+    <meta property="og:locale" content="bn_BD">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "JG Fashion",
+      "description": "প্রিমিয়াম আনস্টিচ কটন থ্রি-পিস কালেকশন",
+      "url": "https://jg-fashion.github.io/",
+      "telephone": "+8801700948614",
+      "email": "jobaahmed600@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BD",
+        "addressLocality": "Dhaka"
+      },
+      "priceRange": "৳৳",
+      "currenciesAccepted": "BDT",
+      "paymentAccepted": "Cash, bKash, Nagad",
+      "openingHours": "Mo-Su 09:00-21:00"
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root { --main: #d63384; --dark: #1a1a1a; --soft: #fdf2f8; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hind Siliguri', sans-serif; background: #fff; color: #333; line-height: 1.6; }
+
+        /* Top Header */
+        header { background: #fff; padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 28px; font-weight: 700; color: var(--main); text-decoration: none; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { text-decoration: none; color: #333; font-weight: 600; font-size: 17px; }
+        nav ul li a:hover { color: var(--main); }
+
+        /* Hero */
+        .hero { 
+            height: 70vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center;
+        }
+        .hero h1 { font-size: 50px; margin-bottom: 10px; }
+        .hero p { font-size: 22px; margin-bottom: 25px; }
+
+        /* Order Form Section */
+        .order-section { padding: 60px 8%; background: var(--soft); border-radius: 20px; margin: 40px 8%; }
+        .order-form { max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; }
+        .submit-btn { width: 100%; background: var(--main); color: #fff; padding: 12px; border: none; border-radius: 5px; font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+        .submit-btn:hover { background: #b0246b; }
+
+        /* Products Placeholder */
+        .container { padding: 60px 8%; text-align: center; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .product-card { border: 1px solid #eee; border-radius: 10px; padding: 20px; text-align: center; }
+        .product-card h3 { margin: 15px 0; color: var(--dark); }
+
+        /* WhatsApp Button */
+        .whatsapp { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2); z-index: 1000; text-decoration: none; }
+
+        /* Footer */
+        footer { background: var(--dark); color: #fff; padding: 50px 8% 20px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 30px; }
+        .footer-grid h4 { color: var(--main); margin-bottom: 20px; font-size: 20px; }
+        .footer-grid p, .footer-grid a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+        .footer-bottom { border-top: 1px solid #444; padding-top: 20px; text-align: center; font-size: 14px; color: #888; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">JG FASHION</a>
+        <nav>
+            <ul>
+                <li><a href="#">হোম</a></li>
+                <li><a href="#new-collection">নিউ কালেকশন</a></li>
+                <li><a href="#">অফার</a></li>
+                <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                <li><a href="#contact">কন্টাক্ট</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>আভিজাত্য আর আরামের সমন্বয়</h1>
+        <p>প্রিমিয়াম আনস্টিচ কটন এবং গর্জিয়াস ঈদের স্পেশাল কালেকশন</p>
+        <a href="#order" class="submit-btn" style="width:auto; padding: 15px 40px; text-decoration:none;">এখনই অর্ডার করুন</a>
+    </section>
+
+    <div class="container" id="new-collection">
+        <h2 style="font-size: 32px; margin-bottom: 30px;">নতুন কালেকশন (শীঘ্রই আসছে)</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div style="height: 350px; background: #f4f4f4; display:flex; align-items:center; justify-content:center; color:#999;">ছবি আপলোড হবে</div>
+                <h3>আনস্টিচ কটন থ্রি-পিস</h3>
+                <p style="color:var(--main); font-weight:700;">৳ আলোচনা সাপেক্ষে</p>
+            </div>
+            <div class="product-card">
+                <div style="height: 350px; background: #f4f4f4; display:flex; align-items:center; justify-content:center; color:#999;">ছবি আপলোড হবে</div>
+                <h3>গর্জিয়াস পার্টি কালেকশন</h3>
+                <p style="color:var(--main); font-weight:700;">৳ আলোচনা সাপেক্ষে</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="order-section" id="order">
+        <h2 style="text-align:center; margin-bottom: 30px;">অর্ডার ফর্ম</h2>
+        <div class="order-form">
+            <div class="form-group">
+                <label>আপনার নাম:</label>
+                <input type="text" placeholder="পুরো নাম লিখুন">
+            </div>
+            <div class="form-group">
+                <label>ফোন নম্বর:</label>
+                <input type="text" placeholder="আপনার সচল মোবাইল নম্বর">
+            </div>
+            <div class="form-group">
+                <label>ঠিকানা:</label>
+                <textarea rows="3" placeholder="পূর্ণ ঠিকানা (জেলা, থানা, এলাকা)"></textarea>
+            </div>
+            <div class="form-group">
+                <label>প্রোডাক্টের নাম/বিবরণ:</label>
+                <input type="text" placeholder="কোন ড্রেসটি নিতে চান?">
+            </div>
+            <button class="submit-btn">অর্ডার কনফার্ম করুন</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div>
+                <h4>JG FASHION</h4>
+                <p>আমরা দিচ্ছি সেরা মানের আনস্টিচ কটন এবং স্টাইলিশ ডিজাইনার থ্রি-পিস। কাস্টমারের সন্তুষ্টিই আমাদের মূল লক্ষ্য।</p>
+            </div>
+            <div>
+                <h4>প্রয়োজনীয় লিংক</h4>
+                <a href="#">প্রাইভেসি পলিসি</a>
+                <a href="#">রিটার্ন পলিসি</a>
+                <a href="#">ডেলিভারি তথ্য</a>
+            </div>
+            <div>
+                <h4>যোগাযোগ</h4>
+                <p><i class="fas fa-phone"></i> ০১৭০০৯৪৮৬১৪</p>
+                <p><i class="fas fa-envelope"></i> jobaahmed600@gmail.com</p>
+                <p><i class="fab fa-facebook"></i> JG Fashion Page</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; ২০২৬ JG Fashion | সাইটটি তৈরি ও অপ্টিমাইজ করেছেন <strong>Afroza Ahmed</strong>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/8801700948614?text=Hi%20JG%20Fashion,%20I%20am%20interested%20in%20your%20collection." class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
