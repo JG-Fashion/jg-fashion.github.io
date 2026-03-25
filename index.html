@@ -44,7 +44,7 @@
         nav ul li:last-child a { background: var(--main); color: #fff; font-weight: 700; }
         nav ul li:last-child a:hover { background: var(--main-dark); transform: translateY(-1px); }
 
-        /* HERO, MARQUEE, FEATURES, SECTION, PRODUCTS, OFFER, REVIEWS, ORDER STYLES (KEEPING YOUR ORIGINAL) */
+        /* HERO & OTHERS */
         .hero { height: 90vh; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; padding: 0 20px; overflow: hidden; }
         .hero-slider { position: absolute; inset: 0; z-index: 0; }
         .hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center top; opacity: 0; transition: opacity 1.2s ease; }
@@ -113,26 +113,27 @@
         .submit-btn { width: 100%; background: var(--main); color: #fff; padding: 15px; border: none; border-radius: 10px; font-size: 18px; font-weight: 700; cursor: pointer; }
 
         /* UPDATED FOOTER STYLES */
-        footer { background: var(--dark); color: #fff; padding: 70px 8% 30px; }
+        footer { background: var(--dark); color: #fff; padding: 70px 8% 30px; font-family: 'Hind Siliguri', sans-serif; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; margin-bottom: 40px; }
         .footer-logo { font-size: 28px; font-weight: 700; color: var(--main); margin-bottom: 20px; display: block; }
-        .footer-grid h4 { color: var(--main); margin-bottom: 25px; font-size: 20px; font-weight: 700; }
-        .footer-grid p { color: #aaa; line-height: 1.7; margin-bottom: 15px; font-size: 15px; }
-        .footer-grid a { color: #aaa; text-decoration: none; display: flex; align-items: center; gap: 10px; margin-bottom: 15px; font-size: 15px; transition: 0.3s; }
-        .footer-grid a:hover { color: var(--main); }
-        .footer-grid a i { color: var(--main); font-size: 18px; width: 20px; text-align: center; }
+        .footer-grid h4 { color: var(--main); margin-bottom: 25px; font-size: 22px; font-weight: 700; }
+        .footer-grid p { color: #ccc; line-height: 1.7; margin-bottom: 15px; font-size: 16px; }
         
-        .social-links { display: flex; gap: 15px; margin-top: 20px; }
-        .social-links a { 
-            width: 40px !important; height: 40px !important; border-radius: 50%; 
-            background: rgba(255,255,255,0.1); color: #fff !important; 
-            display: flex !important; align-items: center; justify-content: center; 
-            font-size: 18px !important; transition: 0.3s; margin-bottom: 0 !important; 
-            border: 1px solid rgba(214,51,132,0.3);
-        }
-        .social-links a:hover { background: var(--main); transform: translateY(-3px); border-color: var(--main); }
-        
-        .footer-bottom { border-top: 1px solid #333; padding-top: 25px; text-align: center; font-size: 14px; color: #666; }
+        /* Social Icons Vertical Layout */
+        .social-links-vertical { display: flex; flex-direction: column; gap: 15px; }
+        .social-links-vertical a { color: #ccc; text-decoration: none; display: flex; align-items: center; gap: 12px; transition: 0.3s; font-size: 16px; }
+        .social-links-vertical a i { background: rgba(255,255,255,0.1); width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; border: 1px solid rgba(214,51,132,0.3); }
+        .social-links-vertical a:hover { color: var(--main); }
+        .social-links-vertical a:hover i { background: var(--main); transform: scale(1.1); }
+
+        /* Contact Section Styles */
+        .contact-info-list { display: flex; flex-direction: column; gap: 15px; }
+        .contact-info-list a { color: #ccc; text-decoration: none; display: flex; align-items: center; gap: 12px; font-size: 16px; transition: 0.3s; }
+        .contact-info-list a i { color: var(--main); font-size: 20px; width: 25px; text-align: center; }
+        .contact-info-list a:hover { color: var(--main); }
+
+        .footer-bottom { border-top: 1px solid #333; padding-top: 30px; text-align: center; font-size: 15px; color: #888; line-height: 1.8; }
+        .footer-bottom strong { color: var(--main); font-weight: 600; }
 
         /* WHATSAPP */
         .whatsapp { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 1000; text-decoration: none; animation: pulse 2s infinite; }
@@ -225,7 +226,7 @@
                 <li><i class="fas fa-check-circle"></i> সব সাইজে পাওয়া যায়</li>
                 <li><i class="fas fa-check-circle"></i> সারা বাংলাদেশে ডেলিভারি</li>
             </ul>
-            <a href="#order" class="order-btn">অর্ডার করুন →</a>
+            <a href="#order" class="btn-main" style="background:var(--main); color:#fff; text-decoration:none;">অর্ডার করুন →</a>
         </div>
     </div>
 </section>
@@ -305,40 +306,38 @@
         <div>
             <span class="footer-logo">JG FASHION</span>
             <p>আমরা দিচ্ছি সেরা মানের আনস্টিচ কটন এবং স্টাইলিশ ডিজাইনার থ্রি-পিস। আপনার সন্তুষ্টিই আমাদের মূল লক্ষ্য।</p>
-            <p><i class="fas fa-map-marker-alt" style="color:var(--main); margin-right:8px;"></i> ঢাকা, বাংলাদেশ</p>
+            <p><i class="fas fa-map-marker-alt" style="color:var(--main); margin-right:8px;"></i> আজিমপুর, ঢাকা, বাংলাদেশ</p>
         </div>
 
         <div>
-            <h4>প্রয়োজনীয় লিংক</h4>
-            <div class="social-links">
-                <a href="https://www.facebook.com/share/18fsqADiJE/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://youtube.com/@jgfashion-joba?si=0hSC_sFf_-LsridU" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@a.for31?_r=1&_t=ZS-94zJPZBk2E8" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div style="margin-top: 20px;">
-                <a href="#">প্রাইভেসি পলিসি</a>
-                <a href="#">রিটার্ন পলিসি</a>
-                <a href="#">ডেলিভারি তথ্য</a>
+            <h4>প্রয়োজনীয় লিংক</h4>
+            <div class="social-links-vertical">
+                <a href="https://www.facebook.com/share/18fsqADiJE/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i> Facebook Page</a>
+                <a href="https://youtube.com/@jgfashion-joba?si=0hSC_sFf_-LsridU" target="_blank"><i class="fab fa-youtube"></i> YouTube Channel</a>
+                <a href="https://www.tiktok.com/@a.for31?_r=1&_t=ZS-94zJPZBk2E8" target="_blank"><i class="fab fa-tiktok"></i> TikTok Profile</a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
         </div>
 
         <div>
             <h4>যোগাযোগ</h4>
-            <a href="https://wa.me/8801700948614" target="_blank">
-                <i class="fab fa-whatsapp"></i> ০১৭০০৯৪৮৬১৪
-            </a>
-            <a href="https://www.facebook.com/share/18fsqADiJE/?mibextid=wwXIfr" target="_blank">
-                <i class="fab fa-facebook-messenger"></i> JG Fashion Page
-            </a>
-            <a href="mailto:jobaahmed600@gmail.com">
-                <i class="fas fa-envelope"></i> jobaahmed600@gmail.com
-            </a>
+            <div class="contact-info-list">
+                <a href="https://wa.me/8801700948614" target="_blank">
+                    <i class="fab fa-whatsapp"></i> 01700948614
+                </a>
+                <a href="https://www.facebook.com/share/18fsqADiJE/?mibextid=wwXIfr" target="_blank">
+                    <i class="fab fa-facebook-messenger"></i> Message Us
+                </a>
+                <a href="mailto:jobaahmed600@gmail.com">
+                    <i class="fas fa-envelope"></i> jobaahmed600@gmail.com
+                </a>
+            </div>
         </div>
     </div>
     
     <div class="footer-bottom">
-        &copy; ২০২৬ JG Fashion | সাইটটি তৈরি ও অপ্টিমাইজ করেছেন <strong style="color:var(--main)">Afroza Ahmed</strong>
+        &copy; ২০২৬ JG Fashion | সাইটটি তৈরি ও অপ্টিমাইজ করেছেন <br>
+        <strong>Founder | JG Fashion - Afroza Ahmed (Digital Growth Expert with SEO & Ads)</strong>
     </div>
 </footer>
 
