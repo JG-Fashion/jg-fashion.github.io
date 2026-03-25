@@ -408,16 +408,3 @@ function handleOrder(e) {
 }
 
 /
-    <script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.hero-slide');
-const dots = document.querySelectorAll('.hero-dot');
-function goToSlide(n) {
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
-    currentSlide = n;
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-}
-setInterval(() => { goToSlide((currentSlide + 1) % slides.length); }, 4000);
-</script>
