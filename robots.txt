@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+Sitemap: https://jg-fashion.github.io/sitemap.xml
